@@ -19,6 +19,7 @@
           <li>ユーザー名: <input type="text" name="username"></li>
           <li>パスワード: <input type="text" name="password"></li>
           <button class="register_btn">送　信</button>
+          <p>・・・</p>
           <div class="back_btn"><a href="login.php">ログインに戻る</a></div>
         </ul>
     </fieldset>

@@ -65,6 +65,12 @@ fieldset {
   cursor: hand;
 }
 
+.index p {
+  font-size: 12px;
+  text-align: center;
+  margin: 0px;
+}
+
 .back_btn {
   display: flex;
   justify-content: center;
