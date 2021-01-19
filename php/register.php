@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
     <fieldset>
     <ul class="index">
           <li>ユーザー名: <input type="text" name="username"></li>
-          <li>パスワード: <input type="text" name="password"></li>
+          <li>パスワード: <input type="password" name="password"></li>
           <button class="register_btn">送　信</button>
           <p>・・・</p>
           <div class="back_btn"><a href="login.php">ログインに戻る</a></div>

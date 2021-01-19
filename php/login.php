@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +16,11 @@
       <fieldset>
         <ul class="index">
           <li>ユーザー名: <input type="text" name="username"></li>
-          <li>パスワード: <input type="text" name="password"></li>
+          <li>パスワード: <input type="password" name="password"></li>
           <button class="login_btn">ログイン</button>
           <p>・・・</p>
           <div class="register_btn"><a href="register.php">新規登録</a></div>
-          <p>※初めてのご利用の方は新規登録から</p>
+          <p>※初めてご利用の方は新規登録から</p>
         </ul>
       </fieldset>
     </form>

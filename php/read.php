@@ -61,7 +61,7 @@ if ($status==false) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
@@ -81,7 +81,7 @@ if ($status==false) {
         <li class="menu_content"><a href="input.php">新しい牛さんの登録</a></li>
         <li class="menu_content"><a href="read.php">牛さんリスト一覧</a></li>
         <li class="menu_content"><a href="">マップ</a></li>
-        <!-- <li class="menu_content"><a href="add.new.html">レシピ登録</a></li> -->
+        <li class="menu_content"><a href="logout.php">ログアウト</a></li>
       </ul>
       </nav>
       <!-- アイコン --> 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,7 @@
     <ul class="index">
       <li><a href="input.php">新規登録</a></li>
       <li><a href="read.php">リスト一覧</a></li>
+      <li><a href="">マップ</a></li></br>
       <li><a href="logout.php">ログアウト</a></li>
     </ul>
   </div>
