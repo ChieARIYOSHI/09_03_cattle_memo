@@ -16,7 +16,7 @@
   <form action="register_act.php" method="POST">
     <fieldset>
     <ul class="index">
-          <li>ユーザー名: <input type="text" name="username" minlength="5"></li>
+          <li>ユーザー名: <input type="text" name="username"></li>
           <li>パスワード: <input type="password" name="password" minlength="5"></li>
           <button class="register_btn">送　信</button>
           <p>・・・</p>

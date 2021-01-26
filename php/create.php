@@ -3,6 +3,10 @@
 // var_dump($_FILES);
 // exit();
 
+session_start();
+include("functions.php");
+check_session_id();
+
 if (
   !isset($_POST['cattle_name']) || $_POST['cattle_name']=='' || !isset($_POST['id_number']) || $_POST['id_number']=='' || !isset($_POST['birthday']) || $_POST['birthday']=='' || !isset($_POST['gender']) || $_POST['gender']=='' || !isset($_FILES['img']['name']) || $_FILES['img']['name']=='' || !isset($_FILES['img']['type']) || $_FILES['img']['type']=='' || !isset($_FILES['img']['tmp_name']) || $_FILES['img']['tmp_name']=='' || !isset($_FILES['img']['size']) || $_FILES['img']['size']=='' || !isset($_POST['feacher']) || $_POST['feacher']=='') {
     exit('ParamError'); 

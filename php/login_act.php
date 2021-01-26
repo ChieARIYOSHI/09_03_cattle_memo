@@ -1,6 +1,8 @@
 <?php
 session_start();
+
 include('functions.php');   // 関数ファイル読み込み
+
 $pdo = connect_to_db();       // DB接続
 $username = $_POST['username']; // データ受け取り→変数に入れる
 $password = $_POST['password'];
@@ -8,7 +10,6 @@ $password = $_POST['password'];
 // DBにデータがあるかどうか検索
 $sql = 'SELECT * FROM users_table WHERE username = :username AND password = :password
 AND is_deleted = 0';
-// WHEREで条件を指定!
 
 $stmt = $pdo->prepare($sql);
 $stmt -> bindValue(':username', $username, PDO::PARAM_STR);

@@ -2,6 +2,10 @@
 // var_dump($_GET);
 // exit();
 
+session_start();
+include("functions.php");
+check_session_id();
+
 // 送信されたidをgetで受け取る
 $id = $_GET['id'];
 // DB接続&id名でテーブルから検索

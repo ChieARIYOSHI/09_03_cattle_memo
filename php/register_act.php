@@ -3,6 +3,12 @@
 // var_dump($_POST);
 // exit();
 
+//登録情報の入力がなかったら弾く
+if (
+  !isset($_POST['username']) || $_POST['username']=='' ||
+  !isset($_POST['password']) || $_POST['password']=='' ){
+  exit('ParamError'); }
+
 // 関数ファイル読み込み
 include('functions.php');
 

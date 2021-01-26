@@ -1,20 +1,12 @@
 <?php
 
-// DB接続情報
-// $dbn = 'mysql:dbname=gsacf_d07_03;charset=utf8;port=3306;host=localhost';
-// $user = 'root';
-// $pwd = '';
-
-// // DB接続
-// try {
-//   $pdo = new PDO($dbn, $user, $pwd);
-// } catch (PDOException $e) {
-//   echo json_encode(["db error" => "{$e->getMessage()}"]);
-//   exit();
-// }
-
+session_start();
 include('functions.php');
-$pdo = connect_to_db();
+check_session_id();
+
+$user_id = $_SESSION['id']; // ユーザid取得
+
+$pdo = connect_to_db(); // DB接続
 
 $sql = 'SELECT * FROM cattle_memo';
 $stmt = $pdo->prepare($sql);
@@ -57,6 +49,9 @@ if ($status==false) {
     </a>";
     // <li>誕生日　{$record["birthday"]}</li>
   } 
+  // $valueの参照を解除する．解除しないと，再度foreachした場合に最初からループしない
+  // 今回は以降foreachしないので影響なし
+  unset($result);
 }
 ?>
 

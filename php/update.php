@@ -2,6 +2,10 @@
 // var_dump($_POST);
 // exit();
 
+session_start();
+include("functions.php");
+check_session_id();
+
 // 受け取ったデータを変数に入れる
 $id = $_POST['id'];
 $current_weight = $_POST['current_weight'];
